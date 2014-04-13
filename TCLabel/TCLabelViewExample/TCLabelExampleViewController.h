@@ -7,15 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-@class TCCopyableLabel;
+#import "TCCopyableLabel.h"
 
 typedef NS_ENUM(NSUInteger, TCLabelSegmentValue){
     TCLabelSegmentValueEnabled = 0,
     TCLabelSegmentValueDisabled,
 };
 
-@interface TCLabelExampleViewController : UIViewController
+@interface TCLabelExampleViewController : UIViewController <TCCopyableLabelDelegate>
 @property (weak, nonatomic) IBOutlet TCCopyableLabel *longPressLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
-@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 @end

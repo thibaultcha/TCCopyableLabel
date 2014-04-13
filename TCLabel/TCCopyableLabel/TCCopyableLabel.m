@@ -82,7 +82,13 @@
 
 - (void)copy:(id)sender
 {
-    [[UIPasteboard generalPasteboard] setString:(self.customString != nil) ? self.customString : self.text];
+    NSString *copiedStr = (self.customString != nil) ? self.customString : self.text;
+    
+    [[UIPasteboard generalPasteboard] setString:copiedStr];
+    
+    if ([self.delegate respondsToSelector:@selector(label:didCopyText:)]) {
+        [self.delegate label:self didCopyText:copiedStr];
+    }
 }
 
 @end

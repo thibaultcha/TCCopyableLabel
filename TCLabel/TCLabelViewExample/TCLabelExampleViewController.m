@@ -7,7 +7,6 @@
 //
 
 #import "TCLabelExampleViewController.h"
-#import "TCCopyableLabel.h"
 
 @interface TCLabelExampleViewController ()
 @property (nonatomic, strong) NSMutableArray *copyableLabels;
@@ -37,6 +36,7 @@
     
     for (UIView *subview in self.view.subviews) {
         if (subview.class == [TCCopyableLabel class]) {
+            [(TCCopyableLabel *)subview setDelegate:self];
             [self.copyableLabels addObject:subview];
         }
     }
@@ -55,6 +55,14 @@
     [self.copyableLabels enumerateObjectsUsingBlock:^(TCCopyableLabel *label, NSUInteger idx, BOOL *stop) {
         [label setCopyingEnabled:enabled];
     }];
+}
+
+#pragma mark - TCCopyableLabelDelegate
+
+- (void)label:(TCCopyableLabel *)copyableLabel didCopyText:(NSString *)copiedText
+{
+    NSString *text = [NSString stringWithFormat:@"Clipboard content: %@", [[UIPasteboard generalPasteboard] string]];
+    [self.textView setText:text];
 }
 
 @end

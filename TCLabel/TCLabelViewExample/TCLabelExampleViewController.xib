@@ -8,7 +8,7 @@
             <connections>
                 <outlet property="longPressLabel" destination="snm-Ai-6g5" id="z7w-Hr-M4n"/>
                 <outlet property="segmentedControl" destination="UYl-ff-T4y" id="Ykv-FY-tFH"/>
-                <outlet property="textField" destination="Rq7-et-TOe" id="csm-EQ-D6E"/>
+                <outlet property="textView" destination="vje-1L-HWP" id="GYv-JB-3ZL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,20 +18,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TCCopyableLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdk-EA-Xsf" customClass="TCCopyableLabel">
-                    <rect key="frame" x="91" y="133" width="138" height="21"/>
+                    <rect key="frame" x="91" y="91" width="138" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left 3s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snm-Ai-6g5" customClass="TCCopyableLabel">
-                    <rect key="frame" x="0.0" y="250" width="53" height="21"/>
+                    <rect key="frame" x="0.0" y="121" width="53" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y82-0y-9UY" customClass="TCCopyableLabel">
-                    <rect key="frame" x="279" y="250" width="41" height="21"/>
+                    <rect key="frame" x="279" y="121" width="41" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
@@ -44,28 +44,31 @@
                         <segment title="Disabled"/>
                     </segments>
                 </segmentedControl>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rq7-et-TOe">
-                    <rect key="frame" x="87" y="246" width="146" height="30"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vje-1L-HWP">
+                    <rect key="frame" x="40" y="171" width="240" height="99"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="146" id="xjA-59-Qjo"/>
+                        <constraint firstAttribute="height" constant="99" id="lDT-c9-UHM"/>
                     </constraints>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="UYl-ff-T4y" secondAttribute="centerX" constant="-0.5" id="1J6-ww-eOg"/>
-                <constraint firstItem="Y82-0y-9UY" firstAttribute="centerY" secondItem="Rq7-et-TOe" secondAttribute="centerY" constant="-0.5" id="4kt-VR-WsS"/>
-                <constraint firstAttribute="centerX" secondItem="Rq7-et-TOe" secondAttribute="centerX" id="MnB-bC-aBg"/>
-                <constraint firstItem="xdk-EA-Xsf" firstAttribute="top" secondItem="UYl-ff-T4y" secondAttribute="bottom" constant="85" id="RPx-Wb-KVd"/>
+                <constraint firstItem="vje-1L-HWP" firstAttribute="centerX" secondItem="xdk-EA-Xsf" secondAttribute="centerX" id="L3h-y5-qtT"/>
+                <constraint firstItem="xdk-EA-Xsf" firstAttribute="top" secondItem="UYl-ff-T4y" secondAttribute="bottom" constant="43" id="RPx-Wb-KVd"/>
                 <constraint firstItem="snm-Ai-6g5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SYt-cF-jdE"/>
-                <constraint firstItem="snm-Ai-6g5" firstAttribute="centerY" secondItem="Rq7-et-TOe" secondAttribute="centerY" constant="-0.5" id="SrW-cA-Mqh"/>
+                <constraint firstItem="vje-1L-HWP" firstAttribute="top" secondItem="snm-Ai-6g5" secondAttribute="bottom" constant="29" id="TCR-Qa-BwF"/>
                 <constraint firstItem="UYl-ff-T4y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Uk8-HU-yNv"/>
-                <constraint firstAttribute="centerY" secondItem="Rq7-et-TOe" secondAttribute="centerY" constant="23" id="Y87-zE-dpw"/>
+                <constraint firstItem="Y82-0y-9UY" firstAttribute="top" secondItem="xdk-EA-Xsf" secondAttribute="bottom" constant="9" id="hIY-tS-Zg9"/>
+                <constraint firstItem="vje-1L-HWP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="l7n-wV-I0H"/>
                 <constraint firstAttribute="centerX" secondItem="xdk-EA-Xsf" secondAttribute="centerX" id="svQ-Hu-58f"/>
                 <constraint firstAttribute="trailing" secondItem="Y82-0y-9UY" secondAttribute="trailing" id="ugu-3O-fcx"/>
+                <constraint firstItem="snm-Ai-6g5" firstAttribute="top" secondItem="xdk-EA-Xsf" secondAttribute="bottom" constant="9" id="uzI-9V-XN3"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
