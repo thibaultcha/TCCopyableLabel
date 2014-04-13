@@ -10,7 +10,7 @@
 
 @interface TCCopyableLabel ()
 @property (nonatomic, strong) UILongPressGestureRecognizer* longPressGestureRecognizer;
-- (void)gestureRecognized:(UILongPressGestureRecognizer *)gestureRecognizer;
+- (void)onLongGesture:(UILongPressGestureRecognizer *)gestureRecognizer;
 @end
 
 @implementation TCCopyableLabel
@@ -35,13 +35,13 @@
 
 - (void)setup
 {
-    [self setEnableCopying:YES];
-    self.longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self
-                                                                                    action:@selector(gestureRecognized:)];
+    [self setCopyingEnabled:YES];
+    self.longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc]
+                                       initWithTarget:self action:@selector(onLongGesture:)];
     [self addGestureRecognizer:self.longPressGestureRecognizer];
 }
 
-- (void)gestureRecognized:(UILongPressGestureRecognizer *)gestureRecognizer
+- (void)onLongGesture:(UILongPressGestureRecognizer *)gestureRecognizer
 {
     if (gestureRecognizer.state == UIGestureRecognizerStateBegan) {
         [self becomeFirstResponder];
@@ -54,18 +54,25 @@
 
 #pragma mark - Custom Setters
 
-- (void)setEnableCopying:(BOOL)enableCopying
+- (void)setCopyingEnabled:(BOOL)enableCopying
 {
-    _enableCopying = enableCopying;
+    _copyingEnabled = enableCopying;
     
     [self setUserInteractionEnabled:enableCopying];
+}
+
+- (void)setMinimumPressDuration:(CFTimeInterval)minimumPressDuration
+{
+    _minimumPressDuration = minimumPressDuration;
+    
+    [self.longPressGestureRecognizer setMinimumPressDuration:minimumPressDuration];
 }
 
 #pragma mark - UIResponder
 
 - (BOOL)canBecomeFirstResponder
 {
-    return self.enableCopying;
+    return self.copyingEnabled;
 }
 
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender
@@ -75,7 +82,7 @@
 
 - (void)copy:(id)sender
 {
-    [[UIPasteboard generalPasteboard] setString:self.text];
+    [[UIPasteboard generalPasteboard] setString:(self.customString != nil) ? self.customString : self.text];
 }
 
 @end

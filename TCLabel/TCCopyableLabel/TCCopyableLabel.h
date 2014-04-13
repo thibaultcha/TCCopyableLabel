@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TCCopyableLabel : UILabel
-@property (nonatomic, assign, setter = setEnableCopying:) BOOL enableCopying;
+@property (nonatomic, assign, setter = setCopyingEnabled:, getter = isCopyingEnabled) BOOL copyingEnabled;
+@property (nonatomic, assign, setter = setMinimumPressDuration:) CFTimeInterval minimumPressDuration;
+@property (nonatomic, copy) NSString *customString;
 @end

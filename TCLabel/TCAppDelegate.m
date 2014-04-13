@@ -14,13 +14,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    TCLabelExampleViewController *exampleVC = [[TCLabelExampleViewController alloc] initWithNibName:@"TCLabelExampleViewController"
-                                                                                             bundle:nil];
+    TCLabelExampleViewController *exampleVC = [[TCLabelExampleViewController alloc]
+                                               initWithNibName:@"TCLabelExampleViewController" bundle:nil];
     [self.window setRootViewController:exampleVC];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
