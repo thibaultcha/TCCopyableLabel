@@ -35,27 +35,37 @@
 
 - (void)setup
 {
+    [self setEnableCopying:YES];
     self.longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self
                                                                                     action:@selector(gestureRecognized:)];
     [self addGestureRecognizer:self.longPressGestureRecognizer];
-    
-    [self setUserInteractionEnabled:YES];
 }
 
 - (void)gestureRecognized:(UILongPressGestureRecognizer *)gestureRecognizer
 {
-    [self becomeFirstResponder];
+    if (gestureRecognizer.state == UIGestureRecognizerStateBegan) {
+        [self becomeFirstResponder];
     
-    UIMenuController *menuController = [UIMenuController sharedMenuController];
-    [menuController setTargetRect:self.bounds inView:self];
-    [menuController setMenuVisible:YES animated:YES];
+        UIMenuController *menuController = [UIMenuController sharedMenuController];
+        [menuController setTargetRect:self.bounds inView:self];
+        [menuController setMenuVisible:YES animated:YES];
+    }
+}
+
+#pragma mark - Custom Setters
+
+- (void)setEnableCopying:(BOOL)enableCopying
+{
+    _enableCopying = enableCopying;
+    
+    [self setUserInteractionEnabled:enableCopying];
 }
 
 #pragma mark - UIResponder
 
 - (BOOL)canBecomeFirstResponder
 {
-    return YES;
+    return self.enableCopying;
 }
 
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender

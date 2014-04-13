@@ -19,9 +19,9 @@
 		C3CA274618FA0E1900AFC203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA272E18FA0E1900AFC203 /* UIKit.framework */; };
 		C3CA274E18FA0E1900AFC203 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3CA274C18FA0E1900AFC203 /* InfoPlist.strings */; };
 		C3CA275018FA0E1900AFC203 /* TCLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CA274F18FA0E1900AFC203 /* TCLabelTests.m */; };
-		C3CA275C18FA0EC600AFC203 /* TCExampleViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CA275A18FA0EC600AFC203 /* TCExampleViewViewController.m */; };
-		C3CA275D18FA0EC600AFC203 /* TCExampleViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CA275B18FA0EC600AFC203 /* TCExampleViewViewController.xib */; };
-		C3CA276018FA0F1E00AFC203 /* TCCopyableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CA275F18FA0F1E00AFC203 /* TCCopyableLabel.m */; };
+		C3CA276418FA194A00AFC203 /* TCCopyableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CA276318FA194A00AFC203 /* TCCopyableLabel.m */; };
+		C3CA276918FA195200AFC203 /* TCLabelExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CA276718FA195200AFC203 /* TCLabelExampleViewController.m */; };
+		C3CA276A18FA195200AFC203 /* TCLabelExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CA276818FA195200AFC203 /* TCLabelExampleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +51,11 @@
 		C3CA274B18FA0E1900AFC203 /* TCLabelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TCLabelTests-Info.plist"; sourceTree = "<group>"; };
 		C3CA274D18FA0E1900AFC203 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C3CA274F18FA0E1900AFC203 /* TCLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCLabelTests.m; sourceTree = "<group>"; };
-		C3CA275918FA0EC600AFC203 /* TCExampleViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCExampleViewViewController.h; sourceTree = "<group>"; };
-		C3CA275A18FA0EC600AFC203 /* TCExampleViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCExampleViewViewController.m; sourceTree = "<group>"; };
-		C3CA275B18FA0EC600AFC203 /* TCExampleViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCExampleViewViewController.xib; sourceTree = "<group>"; };
-		C3CA275E18FA0F1E00AFC203 /* TCCopyableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCopyableLabel.h; sourceTree = "<group>"; };
-		C3CA275F18FA0F1E00AFC203 /* TCCopyableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCopyableLabel.m; sourceTree = "<group>"; };
+		C3CA276218FA194A00AFC203 /* TCCopyableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCopyableLabel.h; sourceTree = "<group>"; };
+		C3CA276318FA194A00AFC203 /* TCCopyableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCopyableLabel.m; sourceTree = "<group>"; };
+		C3CA276618FA195200AFC203 /* TCLabelExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLabelExampleViewController.h; sourceTree = "<group>"; };
+		C3CA276718FA195200AFC203 /* TCLabelExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLabelExampleViewController.m; sourceTree = "<group>"; };
+		C3CA276818FA195200AFC203 /* TCLabelExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCLabelExampleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,13 +117,10 @@
 			children = (
 				C3CA273918FA0E1900AFC203 /* TCAppDelegate.h */,
 				C3CA273A18FA0E1900AFC203 /* TCAppDelegate.m */,
+				C3CA276118FA194A00AFC203 /* TCCopyableLabel */,
+				C3CA276518FA195200AFC203 /* TCLabelViewExample */,
 				C3CA273C18FA0E1900AFC203 /* Images.xcassets */,
 				C3CA273118FA0E1900AFC203 /* Supporting Files */,
-				C3CA275918FA0EC600AFC203 /* TCExampleViewViewController.h */,
-				C3CA275A18FA0EC600AFC203 /* TCExampleViewViewController.m */,
-				C3CA275B18FA0EC600AFC203 /* TCExampleViewViewController.xib */,
-				C3CA275E18FA0F1E00AFC203 /* TCCopyableLabel.h */,
-				C3CA275F18FA0F1E00AFC203 /* TCCopyableLabel.m */,
 			);
 			path = TCLabel;
 			sourceTree = "<group>";
@@ -155,6 +152,25 @@
 				C3CA274C18FA0E1900AFC203 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3CA276118FA194A00AFC203 /* TCCopyableLabel */ = {
+			isa = PBXGroup;
+			children = (
+				C3CA276218FA194A00AFC203 /* TCCopyableLabel.h */,
+				C3CA276318FA194A00AFC203 /* TCCopyableLabel.m */,
+			);
+			path = TCCopyableLabel;
+			sourceTree = "<group>";
+		};
+		C3CA276518FA195200AFC203 /* TCLabelViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				C3CA276618FA195200AFC203 /* TCLabelExampleViewController.h */,
+				C3CA276718FA195200AFC203 /* TCLabelExampleViewController.m */,
+				C3CA276818FA195200AFC203 /* TCLabelExampleViewController.xib */,
+			);
+			path = TCLabelViewExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +249,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CA276A18FA195200AFC203 /* TCLabelExampleViewController.xib in Resources */,
 				C3CA273518FA0E1900AFC203 /* InfoPlist.strings in Resources */,
-				C3CA275D18FA0EC600AFC203 /* TCExampleViewViewController.xib in Resources */,
 				C3CA273D18FA0E1900AFC203 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,10 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CA276418FA194A00AFC203 /* TCCopyableLabel.m in Sources */,
 				C3CA273718FA0E1900AFC203 /* main.m in Sources */,
 				C3CA273B18FA0E1900AFC203 /* TCAppDelegate.m in Sources */,
-				C3CA276018FA0F1E00AFC203 /* TCCopyableLabel.m in Sources */,
-				C3CA275C18FA0EC600AFC203 /* TCExampleViewViewController.m in Sources */,
+				C3CA276918FA195200AFC203 /* TCLabelExampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +470,7 @@
 				C3CA275518FA0E1900AFC203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3CA275618FA0E1900AFC203 /* Build configuration list for PBXNativeTarget "TCLabelTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +479,7 @@
 				C3CA275818FA0E1900AFC203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

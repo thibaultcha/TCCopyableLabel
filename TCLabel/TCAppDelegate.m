@@ -7,7 +7,7 @@
 //
 
 #import "TCAppDelegate.h"
-#import "TCExampleViewViewController.h"
+#import "TCLabelExampleViewController.h"
 
 @implementation TCAppDelegate
 
@@ -17,8 +17,8 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    TCExampleViewViewController *exampleVC = [[TCExampleViewViewController alloc] initWithNibName:@"TCExampleViewViewController"
-                                                                                           bundle:nil];
+    TCLabelExampleViewController *exampleVC = [[TCLabelExampleViewController alloc] initWithNibName:@"TCLabelExampleViewController"
+                                                                                             bundle:nil];
     [self.window setRootViewController:exampleVC];
     [self.window makeKeyAndVisible];
     return YES;

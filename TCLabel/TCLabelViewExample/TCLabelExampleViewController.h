@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class TCCopyableLabel;
 
-@interface TCExampleViewViewController : UIViewController
-
+@interface TCLabelExampleViewController : UIViewController
+@property (weak, nonatomic) IBOutlet TCCopyableLabel *disabledLabel;
 @end

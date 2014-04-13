@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TCCopyableLabel : UILabel
-
+@property (nonatomic, assign, setter = setEnableCopying:) BOOL enableCopying;
 @end
