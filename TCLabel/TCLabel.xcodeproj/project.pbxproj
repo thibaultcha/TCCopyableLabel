@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3CA272B18FA0E1900AFC203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA272A18FA0E1900AFC203 /* Foundation.framework */; };
+		C3CA272D18FA0E1900AFC203 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA272C18FA0E1900AFC203 /* CoreGraphics.framework */; };
+		C3CA272F18FA0E1900AFC203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA272E18FA0E1900AFC203 /* UIKit.framework */; };
+		C3CA273518FA0E1900AFC203 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3CA273318FA0E1900AFC203 /* InfoPlist.strings */; };
+		C3CA273718FA0E1900AFC203 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CA273618FA0E1900AFC203 /* main.m */; };
+		C3CA273B18FA0E1900AFC203 /* TCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CA273A18FA0E1900AFC203 /* TCAppDelegate.m */; };
+		C3CA273D18FA0E1900AFC203 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CA273C18FA0E1900AFC203 /* Images.xcassets */; };
+		C3CA274418FA0E1900AFC203 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA274318FA0E1900AFC203 /* XCTest.framework */; };
+		C3CA274518FA0E1900AFC203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA272A18FA0E1900AFC203 /* Foundation.framework */; };
+		C3CA274618FA0E1900AFC203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA272E18FA0E1900AFC203 /* UIKit.framework */; };
+		C3CA274E18FA0E1900AFC203 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3CA274C18FA0E1900AFC203 /* InfoPlist.strings */; };
+		C3CA275018FA0E1900AFC203 /* TCLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CA274F18FA0E1900AFC203 /* TCLabelTests.m */; };
+		C3CA275C18FA0EC600AFC203 /* TCExampleViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CA275A18FA0EC600AFC203 /* TCExampleViewViewController.m */; };
+		C3CA275D18FA0EC600AFC203 /* TCExampleViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CA275B18FA0EC600AFC203 /* TCExampleViewViewController.xib */; };
+		C3CA276018FA0F1E00AFC203 /* TCCopyableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CA275F18FA0F1E00AFC203 /* TCCopyableLabel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3CA274718FA0E1900AFC203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3CA271F18FA0E1900AFC203 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3CA272618FA0E1900AFC203;
+			remoteInfo = TCLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3CA272718FA0E1900AFC203 /* TCLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CA272A18FA0E1900AFC203 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3CA272C18FA0E1900AFC203 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C3CA272E18FA0E1900AFC203 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C3CA273218FA0E1900AFC203 /* TCLabel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TCLabel-Info.plist"; sourceTree = "<group>"; };
+		C3CA273418FA0E1900AFC203 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3CA273618FA0E1900AFC203 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3CA273818FA0E1900AFC203 /* TCLabel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCLabel-Prefix.pch"; sourceTree = "<group>"; };
+		C3CA273918FA0E1900AFC203 /* TCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
+		C3CA273A18FA0E1900AFC203 /* TCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAppDelegate.m; sourceTree = "<group>"; };
+		C3CA273C18FA0E1900AFC203 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3CA274218FA0E1900AFC203 /* TCLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CA274318FA0E1900AFC203 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C3CA274B18FA0E1900AFC203 /* TCLabelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TCLabelTests-Info.plist"; sourceTree = "<group>"; };
+		C3CA274D18FA0E1900AFC203 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3CA274F18FA0E1900AFC203 /* TCLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCLabelTests.m; sourceTree = "<group>"; };
+		C3CA275918FA0EC600AFC203 /* TCExampleViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCExampleViewViewController.h; sourceTree = "<group>"; };
+		C3CA275A18FA0EC600AFC203 /* TCExampleViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCExampleViewViewController.m; sourceTree = "<group>"; };
+		C3CA275B18FA0EC600AFC203 /* TCExampleViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCExampleViewViewController.xib; sourceTree = "<group>"; };
+		C3CA275E18FA0F1E00AFC203 /* TCCopyableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCopyableLabel.h; sourceTree = "<group>"; };
+		C3CA275F18FA0F1E00AFC203 /* TCCopyableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCopyableLabel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3CA272418FA0E1900AFC203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CA272D18FA0E1900AFC203 /* CoreGraphics.framework in Frameworks */,
+				C3CA272F18FA0E1900AFC203 /* UIKit.framework in Frameworks */,
+				C3CA272B18FA0E1900AFC203 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CA273F18FA0E1900AFC203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CA274418FA0E1900AFC203 /* XCTest.framework in Frameworks */,
+				C3CA274618FA0E1900AFC203 /* UIKit.framework in Frameworks */,
+				C3CA274518FA0E1900AFC203 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3CA271E18FA0E1900AFC203 = {
+			isa = PBXGroup;
+			children = (
+				C3CA273018FA0E1900AFC203 /* TCLabel */,
+				C3CA274918FA0E1900AFC203 /* TCLabelTests */,
+				C3CA272918FA0E1900AFC203 /* Frameworks */,
+				C3CA272818FA0E1900AFC203 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3CA272818FA0E1900AFC203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3CA272718FA0E1900AFC203 /* TCLabel.app */,
+				C3CA274218FA0E1900AFC203 /* TCLabelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3CA272918FA0E1900AFC203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3CA272A18FA0E1900AFC203 /* Foundation.framework */,
+				C3CA272C18FA0E1900AFC203 /* CoreGraphics.framework */,
+				C3CA272E18FA0E1900AFC203 /* UIKit.framework */,
+				C3CA274318FA0E1900AFC203 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3CA273018FA0E1900AFC203 /* TCLabel */ = {
+			isa = PBXGroup;
+			children = (
+				C3CA273918FA0E1900AFC203 /* TCAppDelegate.h */,
+				C3CA273A18FA0E1900AFC203 /* TCAppDelegate.m */,
+				C3CA273C18FA0E1900AFC203 /* Images.xcassets */,
+				C3CA273118FA0E1900AFC203 /* Supporting Files */,
+				C3CA275918FA0EC600AFC203 /* TCExampleViewViewController.h */,
+				C3CA275A18FA0EC600AFC203 /* TCExampleViewViewController.m */,
+				C3CA275B18FA0EC600AFC203 /* TCExampleViewViewController.xib */,
+				C3CA275E18FA0F1E00AFC203 /* TCCopyableLabel.h */,
+				C3CA275F18FA0F1E00AFC203 /* TCCopyableLabel.m */,
+			);
+			path = TCLabel;
+			sourceTree = "<group>";
+		};
+		C3CA273118FA0E1900AFC203 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3CA273218FA0E1900AFC203 /* TCLabel-Info.plist */,
+				C3CA273318FA0E1900AFC203 /* InfoPlist.strings */,
+				C3CA273618FA0E1900AFC203 /* main.m */,
+				C3CA273818FA0E1900AFC203 /* TCLabel-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3CA274918FA0E1900AFC203 /* TCLabelTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3CA274F18FA0E1900AFC203 /* TCLabelTests.m */,
+				C3CA274A18FA0E1900AFC203 /* Supporting Files */,
+			);
+			path = TCLabelTests;
+			sourceTree = "<group>";
+		};
+		C3CA274A18FA0E1900AFC203 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3CA274B18FA0E1900AFC203 /* TCLabelTests-Info.plist */,
+				C3CA274C18FA0E1900AFC203 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3CA272618FA0E1900AFC203 /* TCLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3CA275318FA0E1900AFC203 /* Build configuration list for PBXNativeTarget "TCLabel" */;
+			buildPhases = (
+				C3CA272318FA0E1900AFC203 /* Sources */,
+				C3CA272418FA0E1900AFC203 /* Frameworks */,
+				C3CA272518FA0E1900AFC203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCLabel;
+			productName = TCLabel;
+			productReference = C3CA272718FA0E1900AFC203 /* TCLabel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3CA274118FA0E1900AFC203 /* TCLabelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3CA275618FA0E1900AFC203 /* Build configuration list for PBXNativeTarget "TCLabelTests" */;
+			buildPhases = (
+				C3CA273E18FA0E1900AFC203 /* Sources */,
+				C3CA273F18FA0E1900AFC203 /* Frameworks */,
+				C3CA274018FA0E1900AFC203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3CA274818FA0E1900AFC203 /* PBXTargetDependency */,
+			);
+			name = TCLabelTests;
+			productName = TCLabelTests;
+			productReference = C3CA274218FA0E1900AFC203 /* TCLabelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3CA271F18FA0E1900AFC203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Thibault Charbonnier";
+				TargetAttributes = {
+					C3CA274118FA0E1900AFC203 = {
+						TestTargetID = C3CA272618FA0E1900AFC203;
+					};
+				};
+			};
+			buildConfigurationList = C3CA272218FA0E1900AFC203 /* Build configuration list for PBXProject "TCLabel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C3CA271E18FA0E1900AFC203;
+			productRefGroup = C3CA272818FA0E1900AFC203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3CA272618FA0E1900AFC203 /* TCLabel */,
+				C3CA274118FA0E1900AFC203 /* TCLabelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3CA272518FA0E1900AFC203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CA273518FA0E1900AFC203 /* InfoPlist.strings in Resources */,
+				C3CA275D18FA0EC600AFC203 /* TCExampleViewViewController.xib in Resources */,
+				C3CA273D18FA0E1900AFC203 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CA274018FA0E1900AFC203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CA274E18FA0E1900AFC203 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3CA272318FA0E1900AFC203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CA273718FA0E1900AFC203 /* main.m in Sources */,
+				C3CA273B18FA0E1900AFC203 /* TCAppDelegate.m in Sources */,
+				C3CA276018FA0F1E00AFC203 /* TCCopyableLabel.m in Sources */,
+				C3CA275C18FA0EC600AFC203 /* TCExampleViewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3CA273E18FA0E1900AFC203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CA275018FA0E1900AFC203 /* TCLabelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3CA274818FA0E1900AFC203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3CA272618FA0E1900AFC203 /* TCLabel */;
+			targetProxy = C3CA274718FA0E1900AFC203 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3CA273318FA0E1900AFC203 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3CA273418FA0E1900AFC203 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C3CA274C18FA0E1900AFC203 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3CA274D18FA0E1900AFC203 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3CA275118FA0E1900AFC203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3CA275218FA0E1900AFC203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3CA275418FA0E1900AFC203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TCLabel/TCLabel-Prefix.pch";
+				INFOPLIST_FILE = "TCLabel/TCLabel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C3CA275518FA0E1900AFC203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TCLabel/TCLabel-Prefix.pch";
+				INFOPLIST_FILE = "TCLabel/TCLabel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C3CA275718FA0E1900AFC203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TCLabel.app/TCLabel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TCLabel/TCLabel-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TCLabelTests/TCLabelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C3CA275818FA0E1900AFC203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TCLabel.app/TCLabel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TCLabel/TCLabel-Prefix.pch";
+				INFOPLIST_FILE = "TCLabelTests/TCLabelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3CA272218FA0E1900AFC203 /* Build configuration list for PBXProject "TCLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CA275118FA0E1900AFC203 /* Debug */,
+				C3CA275218FA0E1900AFC203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3CA275318FA0E1900AFC203 /* Build configuration list for PBXNativeTarget "TCLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CA275418FA0E1900AFC203 /* Debug */,
+				C3CA275518FA0E1900AFC203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3CA275618FA0E1900AFC203 /* Build configuration list for PBXNativeTarget "TCLabelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CA275718FA0E1900AFC203 /* Debug */,
+				C3CA275818FA0E1900AFC203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3CA271F18FA0E1900AFC203 /* Project object */;
+}
