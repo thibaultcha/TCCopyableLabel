@@ -17,20 +17,7 @@
 		C3CA272B18FA0E1900AFC203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA272A18FA0E1900AFC203 /* Foundation.framework */; };
 		C3CA272D18FA0E1900AFC203 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA272C18FA0E1900AFC203 /* CoreGraphics.framework */; };
 		C3CA272F18FA0E1900AFC203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA272E18FA0E1900AFC203 /* UIKit.framework */; };
-		C3CA274418FA0E1900AFC203 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA274318FA0E1900AFC203 /* XCTest.framework */; };
-		C3CA274518FA0E1900AFC203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA272A18FA0E1900AFC203 /* Foundation.framework */; };
-		C3CA274618FA0E1900AFC203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CA272E18FA0E1900AFC203 /* UIKit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C3CA274718FA0E1900AFC203 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3CA271F18FA0E1900AFC203 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C3CA272618FA0E1900AFC203;
-			remoteInfo = TCLabel;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C306718218FF794F00A3ADDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -49,7 +36,6 @@
 		C3CA272A18FA0E1900AFC203 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C3CA272C18FA0E1900AFC203 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C3CA272E18FA0E1900AFC203 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C3CA274218FA0E1900AFC203 /* TCCopyableLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCCopyableLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CA274318FA0E1900AFC203 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -61,16 +47,6 @@
 				C3CA272D18FA0E1900AFC203 /* CoreGraphics.framework in Frameworks */,
 				C3CA272F18FA0E1900AFC203 /* UIKit.framework in Frameworks */,
 				C3CA272B18FA0E1900AFC203 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3CA273F18FA0E1900AFC203 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3CA274418FA0E1900AFC203 /* XCTest.framework in Frameworks */,
-				C3CA274618FA0E1900AFC203 /* UIKit.framework in Frameworks */,
-				C3CA274518FA0E1900AFC203 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				C3CA272718FA0E1900AFC203 /* TCCopyableLabel.app */,
-				C3CA274218FA0E1900AFC203 /* TCCopyableLabelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,24 +136,6 @@
 			productReference = C3CA272718FA0E1900AFC203 /* TCCopyableLabel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C3CA274118FA0E1900AFC203 /* TCCopyableLabelTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C3CA275618FA0E1900AFC203 /* Build configuration list for PBXNativeTarget "TCCopyableLabelTests" */;
-			buildPhases = (
-				C3CA273E18FA0E1900AFC203 /* Sources */,
-				C3CA273F18FA0E1900AFC203 /* Frameworks */,
-				C3CA274018FA0E1900AFC203 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C3CA274818FA0E1900AFC203 /* PBXTargetDependency */,
-			);
-			name = TCCopyableLabelTests;
-			productName = TCLabelTests;
-			productReference = C3CA274218FA0E1900AFC203 /* TCCopyableLabelTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -188,11 +145,6 @@
 				CLASSPREFIX = TC;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Thibault Charbonnier";
-				TargetAttributes = {
-					C3CA274118FA0E1900AFC203 = {
-						TestTargetID = C3CA272618FA0E1900AFC203;
-					};
-				};
 			};
 			buildConfigurationList = C3CA272218FA0E1900AFC203 /* Build configuration list for PBXProject "TCCopyableLabel" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -207,7 +159,6 @@
 			projectRoot = "";
 			targets = (
 				C3CA272618FA0E1900AFC203 /* TCCopyableLabel */,
-				C3CA274118FA0E1900AFC203 /* TCCopyableLabelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,13 +171,6 @@
 				C306719018FF794F00A3ADDF /* InfoPlist.strings in Resources */,
 				C306719718FF794F00A3ADDF /* TCLabelExampleViewController.xib in Resources */,
 				C306719118FF794F00A3ADDF /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3CA274018FA0E1900AFC203 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,22 +188,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3CA273E18FA0E1900AFC203 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C3CA274818FA0E1900AFC203 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C3CA272618FA0E1900AFC203 /* TCCopyableLabel */;
-			targetProxy = C3CA274718FA0E1900AFC203 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C306718118FF794F00A3ADDF /* InfoPlist.strings */ = {
@@ -305,7 +234,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -337,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -371,46 +300,6 @@
 			};
 			name = Release;
 		};
-		C3CA275718FA0E1900AFC203 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TCLabel.app/TCLabel";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TCLabel/TCLabel-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TCLabelTests/TCCopyableLabelTests-Info.plist";
-				PRODUCT_NAME = TCCopyableLabelTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		C3CA275818FA0E1900AFC203 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TCLabel.app/TCLabel";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TCLabel/TCLabel-Prefix.pch";
-				INFOPLIST_FILE = "TCLabelTests/TCCopyableLabelTests-Info.plist";
-				PRODUCT_NAME = TCCopyableLabelTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -428,15 +317,6 @@
 			buildConfigurations = (
 				C3CA275418FA0E1900AFC203 /* Debug */,
 				C3CA275518FA0E1900AFC203 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C3CA275618FA0E1900AFC203 /* Build configuration list for PBXNativeTarget "TCCopyableLabelTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C3CA275718FA0E1900AFC203 /* Debug */,
-				C3CA275818FA0E1900AFC203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

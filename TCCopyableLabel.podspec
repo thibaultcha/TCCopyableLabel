@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "TCCopyableLabel"
   s.version      = "1.0.0"
-  s.summary      = "Labels that can by copied by the user"
+  s.summary      = "UILabel that can by copied to the clipboard by the user"
   s.homepage     = "https://github.com/thibaultCha/TCCopyableLabel"
   s.license      = 'MIT'
   s.author       = { "Thibault Charbonnier" => "thibaultcha@me.com" }
