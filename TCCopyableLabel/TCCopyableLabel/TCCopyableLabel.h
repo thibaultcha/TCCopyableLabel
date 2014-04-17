@@ -11,6 +11,7 @@
 
 @interface TCCopyableLabel : UILabel
 @property (nonatomic, unsafe_unretained) id<TCCopyableLabelDelegate> delegate;
+@property (nonatomic, copy) void (^labelCopied)(NSString *copiedString);
 @property (nonatomic, assign, setter = setCopyingEnabled:, getter = isCopyingEnabled) BOOL copyingEnabled;
 @property (nonatomic, assign, setter = setMinimumPressDuration:) CFTimeInterval minimumPressDuration;
 @property (nonatomic, copy) NSString *customString;

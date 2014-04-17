@@ -17,12 +17,28 @@
 
 #pragma mark - Init
 
-- (id)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         [self setup];
     }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame delegate:(id<TCCopyableLabelDelegate>)delegate
+{
+    self = [self initWithFrame:frame];
+    [self setDelegate:delegate];
+
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame copiedBlock:(void (^)(NSString *copiedString))copiedBlock
+{
+    self = [self initWithFrame:frame];
+    [self setLabelCopied:copiedBlock];
+    
     return self;
 }
 
@@ -88,6 +104,9 @@
     
     if ([self.delegate respondsToSelector:@selector(label:didCopyText:)]) {
         [self.delegate label:self didCopyText:copiedStr];
+    }
+    if (self.labelCopied != nil) {
+        self.labelCopied(copiedStr);
     }
 }
 
