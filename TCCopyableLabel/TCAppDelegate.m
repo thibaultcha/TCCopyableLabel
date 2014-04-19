@@ -17,7 +17,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     TCLabelExampleViewController *exampleVC = [[TCLabelExampleViewController alloc]
-                                               initWithNibName:@"TCLabelExampleViewController" bundle:nil];
+                                               initWithNibName:@"TCLabelExampleViewController"
+                                               bundle:nil];
     [self.window setRootViewController:exampleVC];
     [self.window makeKeyAndVisible];
     

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TCLabelExampleViewController">
             <connections>
-                <outlet property="longPressLabel" destination="snm-Ai-6g5" id="z7w-Hr-M4n"/>
+                <outlet property="customTextLabel" destination="snm-Ai-6g5" id="nok-KV-e9K"/>
+                <outlet property="longPressLabel" destination="Y82-0y-9UY" id="E5H-wO-Xdk"/>
                 <outlet property="segmentedControl" destination="UYl-ff-T4y" id="Ykv-FY-tFH"/>
                 <outlet property="textView" destination="vje-1L-HWP" id="GYv-JB-3ZL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -24,14 +26,14 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left custom 3s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snm-Ai-6g5" customClass="TCCopyableLabel">
-                    <rect key="frame" x="0.0" y="121" width="115" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snm-Ai-6g5" customClass="TCCopyableLabel">
+                    <rect key="frame" x="103" y="139" width="94" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y82-0y-9UY" customClass="TCCopyableLabel">
-                    <rect key="frame" x="279" y="121" width="41" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom press duration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y82-0y-9UY" customClass="TCCopyableLabel">
+                    <rect key="frame" x="73" y="194" width="175" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
@@ -45,7 +47,7 @@
                     </segments>
                 </segmentedControl>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vje-1L-HWP">
-                    <rect key="frame" x="40" y="171" width="240" height="99"/>
+                    <rect key="frame" x="40" y="234" width="240" height="99"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -61,14 +63,14 @@
                 <constraint firstAttribute="centerX" secondItem="UYl-ff-T4y" secondAttribute="centerX" constant="-0.5" id="1J6-ww-eOg"/>
                 <constraint firstItem="vje-1L-HWP" firstAttribute="centerX" secondItem="xdk-EA-Xsf" secondAttribute="centerX" id="L3h-y5-qtT"/>
                 <constraint firstItem="xdk-EA-Xsf" firstAttribute="top" secondItem="UYl-ff-T4y" secondAttribute="bottom" constant="43" id="RPx-Wb-KVd"/>
-                <constraint firstItem="snm-Ai-6g5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SYt-cF-jdE"/>
-                <constraint firstItem="vje-1L-HWP" firstAttribute="top" secondItem="snm-Ai-6g5" secondAttribute="bottom" constant="29" id="TCR-Qa-BwF"/>
+                <constraint firstItem="snm-Ai-6g5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="103" id="SYt-cF-jdE"/>
+                <constraint firstItem="vje-1L-HWP" firstAttribute="top" secondItem="snm-Ai-6g5" secondAttribute="bottom" constant="74" id="TCR-Qa-BwF"/>
                 <constraint firstItem="UYl-ff-T4y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Uk8-HU-yNv"/>
-                <constraint firstItem="Y82-0y-9UY" firstAttribute="top" secondItem="xdk-EA-Xsf" secondAttribute="bottom" constant="9" id="hIY-tS-Zg9"/>
+                <constraint firstItem="Y82-0y-9UY" firstAttribute="top" secondItem="xdk-EA-Xsf" secondAttribute="bottom" constant="82" id="hIY-tS-Zg9"/>
                 <constraint firstItem="vje-1L-HWP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="l7n-wV-I0H"/>
                 <constraint firstAttribute="centerX" secondItem="xdk-EA-Xsf" secondAttribute="centerX" id="svQ-Hu-58f"/>
-                <constraint firstAttribute="trailing" secondItem="Y82-0y-9UY" secondAttribute="trailing" id="ugu-3O-fcx"/>
-                <constraint firstItem="snm-Ai-6g5" firstAttribute="top" secondItem="xdk-EA-Xsf" secondAttribute="bottom" constant="9" id="uzI-9V-XN3"/>
+                <constraint firstAttribute="trailing" secondItem="Y82-0y-9UY" secondAttribute="trailing" constant="72" id="ugu-3O-fcx"/>
+                <constraint firstItem="snm-Ai-6g5" firstAttribute="top" secondItem="xdk-EA-Xsf" secondAttribute="bottom" constant="27" id="uzI-9V-XN3"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

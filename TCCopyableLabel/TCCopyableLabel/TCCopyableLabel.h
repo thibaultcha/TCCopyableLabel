@@ -9,12 +9,53 @@
 #import <UIKit/UIKit.h>
 @protocol TCCopyableLabelDelegate;
 
+/**
+ `TCCopyableLabel` is a subclass of `UILabel` with optional properties to allow it
+ to be copied to the clipboard by a user.
+ */
 @interface TCCopyableLabel : UILabel
+
+/**
+ Optional. A delegate that can be notified when a user copies the label.
+ 
+ @since 1.0
+ */
 @property (nonatomic, unsafe_unretained) id<TCCopyableLabelDelegate> delegate;
+
+/**
+ Optional. A block to be performed when a user copies the label.
+ 
+ @since 1.0
+ */
 @property (nonatomic, copy) void (^labelCopied)(NSString *copiedString);
+
+/**
+ Indicates if the label can be copied or not. If set to `NO`, the label will behave as
+ a standard `UILabel`
+
+ @since 1.0
+ */
 @property (nonatomic, assign, setter = setCopyingEnabled:, getter = isCopyingEnabled) BOOL copyingEnabled;
+
+/**
+ The duration of the press event for the copy menu to appear.
+ 
+ @since 1.0
+ */
 @property (nonatomic, assign, setter = setMinimumPressDuration:) CFTimeInterval minimumPressDuration;
+
+/**
+ A custom string to be copied instead of the label's `text` property. Usefull to perform some
+ formatting that could make the user's life easier.
+ 
+ @since 1.0
+ */
 @property (nonatomic, copy) NSString *customString;
+
+- (instancetype)initWithFrame:(CGRect)frame delegate:(id<TCCopyableLabelDelegate>)delegate;
+
+- (instancetype)initWithFrame:(CGRect)frame copiedBlock:(void (^)(NSString *copiedString))copiedBlock;
+
 @end
 
 @protocol TCCopyableLabelDelegate <NSObject>

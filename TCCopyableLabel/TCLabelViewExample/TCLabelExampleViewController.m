@@ -33,7 +33,7 @@
     [super viewDidLoad];
 
     [self.longPressLabel setMinimumPressDuration:3];
-    [self.longPressLabel setCustomString:@"Custom copied string"];
+    [self.customTextLabel setCustomString:@"Custom copied string"];
     
     for (UIView *subview in self.view.subviews) {
         if (subview.class == [TCCopyableLabel class]) {

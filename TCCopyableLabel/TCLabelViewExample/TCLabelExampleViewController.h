@@ -15,6 +15,7 @@ typedef NS_ENUM(NSUInteger, TCLabelSegmentValue){
 };
 
 @interface TCLabelExampleViewController : UIViewController <TCCopyableLabelDelegate>
+@property (weak, nonatomic) IBOutlet TCCopyableLabel *customTextLabel;
 @property (weak, nonatomic) IBOutlet TCCopyableLabel *longPressLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
