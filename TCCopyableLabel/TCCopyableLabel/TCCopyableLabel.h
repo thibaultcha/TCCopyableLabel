@@ -52,8 +52,20 @@
  */
 @property (nonatomic, copy) NSString *customString;
 
+/**
+ Instanciates a `TCCopyabelLabel` and sets its delegate
+ 
+ @since 1.0
+ */
 - (instancetype)initWithFrame:(CGRect)frame delegate:(id<TCCopyableLabelDelegate>)delegate;
 
+/**
+ Instanciates a `TCCopyableLabel` with a `copyBlock`
+ 
+ @see copyBlock
+ 
+ @since 1.0
+ */
 - (instancetype)initWithFrame:(CGRect)frame copiedBlock:(void (^)(NSString *copiedString))copiedBlock;
 
 @end
