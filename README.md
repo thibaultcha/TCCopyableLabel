@@ -41,6 +41,7 @@ Instanciate it as you would do with a regular `UILabel`:
 
 ```objective-c
 TCCopyableLabel *copyableLabel = [[TCCopyableLabel alloc] init];
+[copyableLabel setText:@"Important stuff"];
 
 // customization stuff
 [copyableLabel setMinimumPressDuration:3];
@@ -63,5 +64,5 @@ TCCopyableLabel *copyableLabel2 = [[TCCopyableLabel alloc] initWithFrame:frame  
 
 ## Changelog
 
-### v1.0.0
+### v1.0.0 (4/20/2014)
 * Initial release
