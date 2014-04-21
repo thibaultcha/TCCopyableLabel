@@ -9,11 +9,11 @@ Inspired from [Mattt Thompson](http://mattt.me/)'s article about copyable labels
 - Compatible with Interface Builder.
 - Custom string to be copied in the clipboard instead of the label's text (perform formatting to make your user's life easier).
 - Delegate and block on copy events.
-- Copy trigger duration is customizable.
+- Press to copy duration is customizable.
 
 ## Documentation :books:
 
-Browse the documentation on [Cocoadocs](http://cocoadocs.org/docsets/TCCopyableLabel) or add it directly to Xcode by [downloading]()) the docset and placing it into `~/Library/Developer/Shared/Documentation/DocSets/`. (or use the great [Dash](http://kapeli.com/dash))
+Browse the documentation on [Cocoadocs](http://cocoadocs.org/docsets/TCCopyableLabel) or add it directly to Xcode by [downloading](https://github.com/thibaultCha/TCCopyableLabel/blob/master/Docs/TCCopyableLabel.zip) the docset and placing it into `~/Library/Developer/Shared/Documentation/DocSets/`. (or use the great [Dash](http://kapeli.com/dash))
 
 ## Installation 
 
@@ -29,7 +29,7 @@ If you don't have CocoaPods installed or integrated into your project, you can l
 
 ### Static files
 
-Copy/paste the `TCCopyableLabel` class in your project.
+Copy/paste `TCCopyableLabel/TCCopyableLabel/TCOpyableLabel.{h,m}` class in your project.
 
 Import the class:
 
@@ -54,7 +54,7 @@ In Interface Builder don't forget to add `TCCopyableLabel` in the class field:
 If you wish to perform something once a particular label has been copied, you can do so using the `TCCopyableLabelDelegate` or the `copiedBlock` property:
 
 ```objective-c
- TCCopyableLabel *copiableLabel1 = [[TCCopyableLabel alloc] initWithFrame:frame delegate:self];
+TCCopyableLabel *copiableLabel1 = [[TCCopyableLabel alloc] initWithFrame:frame delegate:self];
 
 TCCopyableLabel *copyableLabel2 = [[TCCopyableLabel alloc] initWithFrame:frame  copiedBlock:^(NSString *copiedString) {
   // do stuff        

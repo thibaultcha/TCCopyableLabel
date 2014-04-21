@@ -72,5 +72,9 @@
 
 @protocol TCCopyableLabelDelegate <NSObject>
 @optional
+
+/**
+ Optional. Called when a user copied the text of a label.
+ */
 - (void)label:(TCCopyableLabel *)copyableLabel didCopyText:(NSString *)copiedText;
 @end

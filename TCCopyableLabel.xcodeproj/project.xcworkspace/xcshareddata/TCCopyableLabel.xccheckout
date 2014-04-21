@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A193AE7D-0298-4F44-9A4D-7BCDA3AA49AB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TCCopyableLabel</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C2B8D6A4-DDC4-465E-B240-535EF9E7AE8E</key>
+		<string>https://github.com/thibaultCha/TCCopyableLabel.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TCCopyableLabel.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C2B8D6A4-DDC4-465E-B240-535EF9E7AE8E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/thibaultCha/TCCopyableLabel.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C2B8D6A4-DDC4-465E-B240-535EF9E7AE8E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C2B8D6A4-DDC4-465E-B240-535EF9E7AE8E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TC_CopyableLabel</string>
+		</dict>
+	</array>
+</dict>
+</plist>
