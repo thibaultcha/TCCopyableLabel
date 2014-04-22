@@ -1,6 +1,8 @@
 # TCCopyableLabel
 
-TCCopyableLabel is a subclass of `UILabel` that allows a user to copy the label's text to the clipboard, just like a regular text input.
+#### Provide the best UX to your users!
+
+TCCopyableLabel is a subclass of `UILabel` that allows a user to copy the label's text to the clipboard, just like a regular text input. This can be really useful in some situations where you dispplay some important real-life informations.
 
 ![Demo](demo.gif)
 
@@ -13,7 +15,7 @@ Inspired from [Mattt Thompson](http://mattt.me/)'s article about copyable labels
 
 ## Documentation :books:
 
-Browse the documentation on [Cocoadocs](http://cocoadocs.org/docsets/TCCopyableLabel) or add it directly to Xcode by [downloading](https://github.com/thibaultCha/TCCopyableLabel/blob/master/Docs/TCCopyableLabel.zip) the docset and placing it into `~/Library/Developer/Shared/Documentation/DocSets/`. (or use the great [Dash](http://kapeli.com/dash))
+Browse the documentation on [Cocoadocs](http://cocoadocs.org/docsets/TCCopyableLabel) or add it directly to Xcode by [downloading](https://github.com/thibaultCha/TCCopyableLabel/blob/master/Docs/TCCopyableLabel.zip?raw=true) the docset and placing it into `~/Library/Developer/Shared/Documentation/DocSets/`. (or use the great [Dash](http://kapeli.com/dash))
 
 ## Installation 
 
@@ -29,7 +31,7 @@ If you don't have CocoaPods installed or integrated into your project, you can l
 
 ### Static files
 
-Copy/paste `TCCopyableLabel/TCCopyableLabel/TCOpyableLabel.{h,m}` class in your project.
+Copy/paste `TCCopyableLabel/TCCopyableLabel/TCopyableLabel.{h,m}` class in your project.
 
 Import the class:
 
@@ -48,7 +50,7 @@ TCCopyableLabel *copyableLabel = [[TCCopyableLabel alloc] init];
 [copyableLabel setCustomString:@"Custom string to be copied"];
 ```
 
-In Interface Builder don't forget to add `TCCopyableLabel` in the class field:
+If you are using Interface Builder, don't forget to add `TCCopyableLabel` in the class field:
 
 ![Interface Builder Example](ib.png)
 
