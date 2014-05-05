@@ -93,7 +93,12 @@
 
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender
 {
-    return (action == @selector(copy:));
+    if (action == @selector(copy:)) {
+        return YES;
+    }
+    else {
+        return [super canPerformAction:action withSender:sender];
+    }
 }
 
 - (void)copy:(id)sender
