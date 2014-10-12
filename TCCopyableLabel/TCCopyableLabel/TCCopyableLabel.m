@@ -105,7 +105,9 @@
 {
     NSString *copiedStr = (self.customString != nil) ? self.customString : self.text;
     
-    [[UIPasteboard generalPasteboard] setString:copiedStr];
+    if ([copiedStr isKindOfClass:[NSString class]]) {
+        [[UIPasteboard generalPasteboard] setString:copiedStr];
+    }
     
     if ([self.delegate respondsToSelector:@selector(label:didCopyText:)]) {
         [self.delegate label:self didCopyText:copiedStr];
