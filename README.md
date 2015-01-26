@@ -17,7 +17,7 @@ Inspired from [Mattt Thompson](http://mattt.me/)'s article about copyable labels
 
 Browse the documentation on [Cocoadocs](http://cocoadocs.org/docsets/TCCopyableLabel) or add it directly to Xcode by [downloading](https://github.com/thibaultCha/TCCopyableLabel/blob/master/Docs/TCCopyableLabel.zip?raw=true) the docset and placing it into `~/Library/Developer/Shared/Documentation/DocSets/`. (or use the great [Dash](http://kapeli.com/dash))
 
-## Installation 
+## Installation
 
 ### Cocoapod
 
@@ -60,11 +60,6 @@ If you wish to perform something once a particular label has been copied, you ca
 TCCopyableLabel *copiableLabel1 = [[TCCopyableLabel alloc] initWithFrame:frame delegate:self];
 
 TCCopyableLabel *copyableLabel2 = [[TCCopyableLabel alloc] initWithFrame:frame  copiedBlock:^(NSString *copiedString) {
-  // do stuff        
+  // do stuff
 }];
 ```
-
-## Changelog
-
-### v1.0.0 (4/20/2014)
-* Initial release

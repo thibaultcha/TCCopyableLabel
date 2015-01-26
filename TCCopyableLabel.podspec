@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TCCopyableLabel"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "UILabel that can by copied to the clipboard by the user"
   s.homepage     = "https://github.com/thibaultCha/TCCopyableLabel"
   s.license      = 'MIT'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
   s.source       = {
     :git => "https://github.com/thibaultCha/TCCopyableLabel.git",
-    :tag => "1.0.0"
+    :tag => "1.0.1"
   }
   s.source_files = 'TCCopyableLabel/TCCopyableLabel/**/*.{h,m}'
   s.requires_arc = true
