@@ -10,29 +10,29 @@
 	<string>TCCopyableLabel</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C2B8D6A4-DDC4-465E-B240-535EF9E7AE8E</key>
-		<string>https://github.com/thibaultCha/TCCopyableLabel.git</string>
+		<key>3C61ABE9F100341E061D980370030F3A55B32466</key>
+		<string>github.com:thibaultCha/TCCopyableLabel.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TCCopyableLabel.xcodeproj/project.xcworkspace</string>
+	<string>TCCopyableLabel.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C2B8D6A4-DDC4-465E-B240-535EF9E7AE8E</key>
+		<key>3C61ABE9F100341E061D980370030F3A55B32466</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/thibaultCha/TCCopyableLabel.git</string>
+	<string>github.com:thibaultCha/TCCopyableLabel.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C2B8D6A4-DDC4-465E-B240-535EF9E7AE8E</string>
+	<string>3C61ABE9F100341E061D980370030F3A55B32466</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C2B8D6A4-DDC4-465E-B240-535EF9E7AE8E</string>
+			<string>3C61ABE9F100341E061D980370030F3A55B32466</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TC_CopyableLabel</string>
 		</dict>
